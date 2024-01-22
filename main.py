@@ -29,7 +29,7 @@ def get_report(path, book):
 
     number_words = get_num_words(book)
     count_letter = list(count_letters(book).items())
-    sorted_count_letter = count_letter.sort(reverse=True, key=lambda x: x[1])
+    count_letter.sort(reverse=True, key=lambda x: x[1])
 
     print(f"--- Begin report of {path} ---")
     print(f"{number_words} words found in the document")
